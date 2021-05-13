@@ -1,0 +1,36 @@
+body
+{
+    background-color: #000000;
+    font-size: 24px;
+    color: white;
+}
+
+#container
+{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bord
+{
+    width: 900px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+    min-width: 60px;
+}
+#hangman
+{
+    float: left;
+    width: 450px;
+    text-align: center;
+    min-width: 280px;
+}
+#alphabet
+{
+    float: left;
+    width: 450px;
+    text-align: center;
+    min-width: 280px;
+}

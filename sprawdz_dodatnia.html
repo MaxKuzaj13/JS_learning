@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprawdzenie wartosci liczby</title>
+    <script type="text/javascript">
+        function sprawdz()
+        {
+            // uchwyt
+            var liczba = document.getElementById("pole").value;
+            
+            // to print document.write(liczba); but it update all paage
+
+            if (liczba>0) document.getElementById("wynik").innerHTML="dodatnia";
+            else if (liczba<0) document.getElementById("wynik").innerHTML="ujemna";
+            else if (liczba==0) document.getElementById("wynik").innerHTML="zero";
+            else document.getElementById("wynik").innerHTML="to nie liczba";
+
+
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <input type="text" id="pole"/>
+    <input type="submit" value="Sprawdz" onclick="sprawdz()"/>
+    <div id="wynik">
+
+    </div>
+
+</body>
+</html>
