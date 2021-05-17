@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<title>Bankomat</title>
+
+</head>
+<body>
+    <script>
+        var pln =1000;
+        document.write("wplata: "+ pln + "PLN <br /><br />")
+
+        //Przewalutowanie
+        var usd = pln / 4.008357;
+        //document.write("Saldo: "+usd+" USD <br />")
+
+        usd = Math.floor(usd*100) /100;
+        document.write("Saldo: "+usd+" USD <br />")
+
+        // zakupy pobieramy 2%
+        var zakupy = 23.99;
+        document.write("Zakupy: "+ zakupy+" USD <br />")
+        // zle musimy zaokralic w gore 
+        // document.write("Prowizja: "+ zakupy*0.02+" USD <br />")
+        var prowizja = zakupy*0.02;
+        prowizja = Math.ceil(prowizja*100)/100;
+        document.write("Prowizja: "+ prowizja + " USD <br />")
+
+        usd = usd - zakupy - prowizja
+
+        document.write("Zostalo po zakupach: "+ usd + " USD <br />")
+
+        
+
+
+    </script>
+    
+
+
+</body>
+</html>
